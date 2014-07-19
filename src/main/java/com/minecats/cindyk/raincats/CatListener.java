@@ -13,11 +13,9 @@ import org.bukkit.event.entity.EntitySpawnEvent;
 public class CatListener implements Listener {
 
     @EventHandler
-    void onOcelotSpawn(EntitySpawnEvent event)
-    {
+    void onOcelotSpawn(EntitySpawnEvent event) {
 
-        if(event.getEntity().getType() == EntityType.OCELOT)
-        {
+        if (event.getEntity().getType() == EntityType.OCELOT) {
             Ocelot oc = (Ocelot) event.getEntity();
             RainCats.plugin.getLogger().info("ESE: " + oc.getUniqueId().toString() + " at " + oc.getLocation().toString());
             //Nevermind...
